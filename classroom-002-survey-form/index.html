@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <meta name="description" content="Institutional survey form." />
+        <meta name="author" content="Jackson Douglas de Souza" />
+        <!--FAVICON-->
+        <link
+            rel="shortcut icon"
+            href="../favicon/favicon.png"
+            type="image/x-icon"
+        />
+        <title>Survey Form</title>
+    </head>
+    <!--BODY-->
+    <body>
+        <!--LOGO-->
+        <header class="container header">
+            <a href="../index.html">
+                <img
+                    id="logo"
+                    src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+                    width="210"
+                    height="24"
+                    alt="Logo marca"
+                />
+            </a>
+        </header>
+
+        <!--MAIN-->
+        <main class="container">
+            <!--HEADER-->
+            <header class=".header">
+                <h1 id="title" class="text-center">FreeCodCamp Survey Form</h1>
+                <p id="description" class="description text-center">
+                    Thank you for taking the time to help us improve the
+                    platform
+                </p>
+            </header>
+            <!--FORM-->
+            <form action="#" method="POST" id="survey-form">
+                <!--USER NAME-->
+                <section class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />
+                </section>
+                <!--END NAME-->
+
+                <!--USER MAIL-->
+                <section class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your e-mail address"
+                        required
+                    />
+                </section>
+                <!--END MAIL-->
+
+                <!--USER AGE-->
+                <section class="form-group">
+                    <label id="age-label" for="age"
+                        >Your age
+                        <span class="clue">(optional)</span>
+                    </label>
+                    <input
+                        type="number"
+                        name="age"
+                        id="age"
+                        min="16"
+                        max="60"
+                        class="form-control"
+                        placeholder="16"
+                    />
+                </section>
+                <!--END AGE-->
+
+                <!--USER PROFESSION-->
+                <section class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <!--SELECT-->
+                    <select
+                        id="dropdown"
+                        name="role"
+                        class="form-control"
+                        required
+                    >
+                        <option disabled selected value>
+                            Select current role
+                        </option>
+                        <option value="student">Student</option>
+                        <option value="job">Full time job</option>
+                        <option value="learner">Full time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </section>
+                <!--END PROFESSION-->
+
+                <!--USER RECOMMENDATION-->
+                <section class="form-group">
+                    <p>Would you recommend FreeCodCamp to a friend?</p>
+                    <!--OPTION 01 - DEFINITELY-->
+                    <label>
+                        <input
+                            name="user-recommend"
+                            value="definitely"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                        />Definitely
+                    </label>
+
+                    <!--OPTION 02 - MAYBE-->
+                    <label>
+                        <input
+                            name="user-recommend"
+                            value="maybe"
+                            type="radio"
+                            class="input-radio"
+                        />Maybe
+                    </label>
+
+                    <!--OPTION 03 - NOT SURE-->
+                    <label>
+                        <input
+                            name="user-recommend"
+                            value="not-sure"
+                            type="radio"
+                            class="input-radio"
+                        />Not sure
+                    </label>
+                </section>
+                <!--END RECOMMENDATION-->
+
+                <!--USER FAVORITE OPTION-->
+                <section class="form-group">
+                    <p>What is your favorite feature of FreeCodCamp?</p>
+                    <!--SELECT-->
+                    <select
+                        name="mostLike"
+                        id="most-like"
+                        class="from-control"
+                        required
+                    >
+                        <option disabled selected value>
+                            Select an option
+                        </option>
+                        <option value="">Challenges</option>
+                        <option value="">Projects</option>
+                        <option value="">Community</option>
+                        <option value="">Open Source</option>
+                    </select>
+                </section>
+                <!--END FAVORITE OPTION-->
+
+                <!--FEEDBACK -->
+                <section class="form-group">
+                    <p>
+                        What would you like see improved?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <!--OPTION 01 - FRONT-END-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="front-end-projects"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Front-end Projects
+                    </label>
+
+                    <!--OPTION 02 - BACK-END-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="back-end-projects"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Back-end-Projects
+                    </label>
+
+                    <!--OPTION 03 - BACK-END-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="data-visualization"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Data Visualization
+                    </label>
+
+                    <!--OPTION 04 - CHALLENGES-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="challenges"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Challenges
+                    </label>
+
+                    <!--OPTION 05 - OPEN SOURCE-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="open-source-community"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Open Source Community
+                    </label>
+
+                    <!--OPTION 06 - HELP ROOMS-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="gitter-help-rooms"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Gitter help rooms
+                    </label>
+
+                    <!--OPTION 07 - VIDEOS-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="videos"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Videos
+                    </label>
+
+                    <!--OPTION 08 - MEETUPS-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="city-meetups"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />City Meetups
+                    </label>
+
+                    <!--OPTION 09 - WIKI-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="wiki"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Wiki
+                    </label>
+
+                    <!--OPTION 10 - FORUM-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="forum"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Forum
+                    </label>
+
+                    <!--OPTION 11 - PLUS COURSES-->
+                    <label>
+                        <input
+                            name="prefer"
+                            value="additional-courses"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />Additional-Courses
+                    </label>
+                </section>
+                <!--END FEEDBACK -->
+
+                <!--TEXTAREA - SUGGESTIONS-->
+                <section class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comment here..."
+                    ></textarea>
+                </section>
+                <!--END SUGGESTIONS-->
+
+                <!--BUTTON SUBMIT-->
+                <section class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </section>
+            </form>
+            <!--END FORM-->
+        </main>
+        <!--END MAIN-->
+        <footer>
+            <p>Developed by the student</p>
+            <a
+                href="https://www.linkedin.com/in/jacksondouglasdesouza/"
+                target="_blank"
+                >Jackson Douglas de Souza</a
+            >
+        </footer>
+    </body>
+</html>
