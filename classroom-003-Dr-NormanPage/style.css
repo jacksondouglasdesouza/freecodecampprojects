@@ -1,0 +1,327 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    /* ******** RESET ******** */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******** END RESET ******** */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display+SC&family=Poppins:ital,wght@0,500;1,300;1,400&display=swap');
+
+
+html{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+body{
+    border-top: rgb(19, 18, 18) 20px solid;
+    max-width: 1400px;
+    font-size:  1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0 auto;
+}
+
+#main{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.naver{
+    margin: 20px auto 0 auto;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav > a{
+    text-decoration: none;
+    list-style: none;
+    background-color: inherit;
+    color: rgb(19, 18, 18);
+    padding: 5px 5px;
+    width: 100px;
+}
+
+nav > a:hover{
+    background-color: rgb(19, 18, 18);
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.header{
+    padding: 40px 0 10px 0;
+    margin-bottom: 0;
+}
+
+h1{
+    margin: 10px auto;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.photo{
+    width: 100%;
+}
+
+#img-div{
+    padding: 0;
+}
+
+#image{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+figcaption{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+#img-caption{
+    margin-top: 10px;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+article{
+    background-color: rgba(238, 236, 236, 0.596);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0 auto;
+}
+
+article > header{
+    padding: 30px 20px 0px 20px;
+    margin: 0 auto;
+}
+
+header > h2{
+    color: rgb(19, 18, 18);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+article > .uls{
+    margin: 10px auto 0 auto;
+    padding: 30px;
+}
+
+.uls > ul{
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+
+.uls > ul > li > strong{
+    font-weight: bold;
+    color: rgb(19, 18, 18);
+}
+
+.uls > ul > li{
+    margin: 16px 0;
+    line-height: 1.6;
+}
+
+article > aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+    height: 300px;
+    text-align: left;
+}
+
+aside > blockquote{
+    max-width: 800px;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+}
+
+article > footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 100px;
+}
+
+article > footer > h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgb(19, 18, 18);
+}
+
+#tribute-link{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(19, 18, 18);
+    padding: 2px 10px;
+    border-radius: 0 10px 0 10px;
+}
+
+/* ***** FOOTER ***** */
+
+footer.foo{
+    background-color: rgba(211, 209, 209, 0.616);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+footer.foo p{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+footer.foo > a{
+    font-size: 1.1rem;
+    background-color: rgb(19, 18, 18);
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #FFF;
+}
+
+
+/* ***** MEDIAS ***** */
+
+@media(max-width:840px){
+    body{
+        margin: 0 auto;
+    }
+    #main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    blockquote{
+        padding: 20px;
+    }
+}
+
+@media(max-width:220px){
+    html{
+        font-size: small;
+    }
+    body{
+        margin: 0 auto;
+    }
+    #main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    blockquote{
+        padding: 30px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    article > header > h2{
+        font-size: 1rem;
+    }
+    aside > blockquote{
+        font-size: 0.6rem;
+        padding: 10px;
+    }
+    article > footer > h3{
+        font-size: 0.8rem;
+    }
+
+    footer.foo a{
+        font-size: small;
+        background-color: transparent;
+        color: rgb(19, 18, 18);
+    }
+}
+
+@media(max-width:160px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    aside{
+        display: none;
+    }
+}
+
+
